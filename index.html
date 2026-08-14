@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Campus - Legal Documents</title>
+    <meta name="description" content="Official Privacy Policy and Terms & Conditions for Teacher Campus.">
+    <style>
+        :root {
+            --primary: #1E60FB;
+            --primary-hover: #154ecc;
+            --text-dark: #0F172A;
+            --text-muted: #64748B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border: #E2E8F0;
+            --radius: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 20px;
+        }
+
+        .header-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .brand-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .nav-tabs {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tab-btn {
+            appearance: none;
+            border: 1px solid var(--border);
+            background: #FFFFFF;
+            padding: 8px 16px;
+            border-radius: var(--radius);
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.15s ease;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-dark);
+            border-color: #CBD5E1;
+        }
+
+        .tab-btn.active {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            border-color: var(--primary);
+        }
+
+        .main-container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 16px auto;
+            padding: 0 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .frame-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            flex: 1;
+            min-height: 750px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 750px;
+            border: none;
+            flex: 1;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            background: var(--bg-card);
+            padding: 16px 20px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="brand-title">Teacher Campus</div>
+            <nav class="nav-tabs" aria-label="Legal Navigation">
+                <button type="button" class="tab-btn active" id="tab-privacy" onclick="loadDoc('privacy')">
+                    Privacy Policy
+                </button>
+                <button type="button" class="tab-btn" id="tab-terms" onclick="loadDoc('terms')">
+                    Terms &amp; Conditions
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="frame-wrapper">
+            <iframe id="doc-frame" src="privacy-policy.html" title="Legal Document Viewer"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Teacher Campus. All rights reserved.
+    </footer>
+
+    <script>
+        const docFrame = document.getElementById('doc-frame');
+        const tabPrivacy = document.getElementById('tab-privacy');
+        const tabTerms = document.getElementById('tab-terms');
+
+        function loadDoc(type) {
+            if (type === 'terms') {
+                docFrame.src = 'terms-and-conditions.html';
+                tabTerms.classList.add('active');
+                tabPrivacy.classList.remove('active');
+                window.location.hash = 'terms';
+            } else {
+                docFrame.src = 'privacy-policy.html';
+                tabPrivacy.classList.add('active');
+                tabTerms.classList.remove('active');
+                window.location.hash = 'privacy';
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '').toLowerCase();
+            if (hash === 'terms') {
+                loadDoc('terms');
+            } else {
+                loadDoc('privacy');
+            }
+        });
+    </script>
+</body>
+</html>
