@@ -4,101 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Teacher Campus</title>
-    <meta name="description" content="Official Privacy Policy for Teacher Campus Android Application and Services by TND Media.">
+    <meta name="description" content="Privacy Policy for Teacher Campus. Simple, transparent, and respectful of your data.">
     <style>
         :root {
-            --primary: #1E60FB;
-            --primary-dark: #1244B8;
-            --text-dark: #0F172A;
-            --text-muted: #475569;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --text-main: #2D3748;
+            --text-muted: #4A5568;
+            --heading: #1A202C;
             --bg-page: #F8FAFC;
             --bg-card: #FFFFFF;
             --border: #E2E8F0;
-            --accent-warn: #FEF3C7;
-            --accent-warn-text: #92400E;
-            --accent-warn-border: #FCD34D;
+            --primary: #1E60FB;
+            --primary-soft: #EFF6FF;
+            --accent-warm: #FFFBEB;
+            --accent-warm-border: #FDE68A;
+            --accent-warm-text: #92400E;
         }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-family: var(--font-sans);
             background-color: var(--bg-page);
-            color: var(--text-dark);
-            line-height: 1.65;
-            padding: 24px 16px;
+            color: var(--text-main);
+            line-height: 1.75;
+            padding: 40px 16px;
         }
+
         .container {
-            max-width: 860px;
+            max-width: 820px;
             margin: 0 auto;
             background: var(--bg-card);
-            padding: 40px 32px;
+            padding: 44px;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
             border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
         }
+
         .header {
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 24px;
             margin-bottom: 28px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
         }
-        .app-badge {
+
+        .badge {
             display: inline-block;
-            background: #EFF6FF;
+            background: var(--primary-soft);
             color: var(--primary);
-            font-weight: 700;
+            font-weight: 600;
             font-size: 12px;
             padding: 4px 12px;
             border-radius: 999px;
             margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
-        h1 { font-size: 28px; color: var(--text-dark); font-weight: 800; margin-bottom: 8px; }
-        .meta-info { font-size: 13.5px; color: var(--text-muted); }
-        h2 {
-            font-size: 20px;
-            color: var(--text-dark);
-            margin-top: 32px;
-            margin-bottom: 14px;
+
+        h1 {
+            font-size: 26px;
+            color: var(--heading);
             font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .meta {
+            font-size: 13px;
+            color: #718096;
+        }
+
+        .friendly-box {
+            background-color: var(--accent-warm);
+            border: 1px solid var(--accent-warm-border);
+            color: var(--accent-warm-text);
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin: 24px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+
+        .friendly-box strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #78350F;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: var(--heading);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-weight: 600;
             display: flex;
             align-items: center;
             gap: 8px;
         }
-        h3 { font-size: 16px; color: var(--text-dark); margin-top: 18px; margin-bottom: 8px; font-weight: 600; }
-        p { margin-bottom: 14px; font-size: 14.5px; color: var(--text-muted); }
-        ul { margin-left: 20px; margin-bottom: 14px; color: var(--text-muted); font-size: 14.5px; }
-        li { margin-bottom: 6px; }
-        a { color: var(--primary); text-decoration: none; font-weight: 500; }
-        a:hover { text-decoration: underline; }
-        .alert-box {
-            background-color: var(--accent-warn);
-            border: 1px solid var(--accent-warn-border);
-            color: var(--accent-warn-text);
-            padding: 16px 20px;
-            border-radius: 12px;
-            margin: 20px 0;
-            font-size: 14px;
+
+        h3 {
+            font-size: 15px;
+            color: var(--heading);
+            margin-top: 18px;
+            margin-bottom: 8px;
+            font-weight: 600;
         }
-        .alert-box strong { display: block; margin-bottom: 6px; font-size: 15px; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+
+        p {
+            margin-bottom: 14px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin-left: 22px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-card {
+            background: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin: 16px 0;
+        }
+
+        .highlight-card h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--heading);
+            margin-bottom: 6px;
+        }
+
+        .highlight-card p {
+            margin-bottom: 0;
             font-size: 13.5px;
         }
-        th, td {
-            text-align: left;
-            padding: 12px 14px;
-            border: 1px solid var(--border);
-        }
-        th { background: #F1F5F9; color: var(--text-dark); font-weight: 600; }
+
         .footer {
             margin-top: 40px;
-            padding-top: 24px;
+            padding-top: 20px;
             border-top: 1px solid var(--border);
             font-size: 13px;
-            color: var(--text-muted);
+            color: #A0AEC0;
             text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 24px 18px; }
+            body { padding: 16px 8px; }
+            h1 { font-size: 22px; }
         }
     </style>
 </head>
@@ -106,115 +163,77 @@
 
 <div class="container">
     <div class="header">
-        <span class="app-badge">Official Policy</span>
-        <h1>Privacy Policy for Teacher Campus</h1>
-        <div class="meta-info">
-            <strong>Package Name:</strong> com.tndmedia.bengalteachers &bull; 
-            <strong>Effective Date:</strong> August 14, 2026 &bull; 
-            <strong>Last Updated:</strong> August 14, 2026 &bull; 
-            <strong>Publisher:</strong> TND Media
+        <span class="badge">Privacy &amp; Data</span>
+        <h1>Privacy Policy</h1>
+        <div class="meta">
+            Application: Teacher Campus &bull; Last updated: August 2026
         </div>
     </div>
 
-    <div class="alert-box">
-        <strong>⚠️ MANDATORY GOVERNMENT NON-AFFILIATION DISCLAIMER:</strong>
-        Teacher Campus is an independent, non-governmental educational platform operated by TND Media. It is <strong>NOT</strong> affiliated with, authorized by, or endorsed by the Government of India, the Government of West Bengal, WBBPE, WBBSE, WBCHSE, WBSSC, or any District Primary School Council (DPSC).
+    <div class="friendly-box">
+        <strong>A quick note about Teacher Campus:</strong>
+        Teacher Campus is an independent, non-governmental companion app designed to help educators, trainees, and aspirants across West Bengal with exam updates, study notes, and career tools. We are not an official government agency, and we aggregate public notices to make them easier to access.
     </div>
 
-    <h2>1. Introduction</h2>
-    <p>Welcome to <strong>Teacher Campus</strong>, owned and operated by <strong>TND Media</strong> ("we," "us," or "our"). We are dedicated to respecting and safeguarding your privacy. This Privacy Policy details our policies regarding the collection, use, storage, protection, and disclosure of personal data when you use the Teacher Campus mobile application and related online services.</p>
+    <h2>1. Our Privacy Promise</h2>
+    <p>We built Teacher Campus with a simple principle: your personal data belongs to you. We do not sell your personal information, and we only collect what is truly necessary to make your experience helpful, fast, and secure.</p>
 
-    <h2>2. Source of Educational & Public Information</h2>
-    <p>All educational notifications, recruitment circulars, syllabi, and council contacts displayed in Teacher Campus are aggregated strictly from public domain government announcements and official portals:</p>
+    <h2>2. What Information We Collect (and Why)</h2>
+    <p>To help you get the most out of the app, we may handle a few basic types of information:</p>
+
+    <div class="highlight-card">
+        <h4>👤 Basic Account Information</h4>
+        <p>If you choose to create a profile (for example, signing in with Google), we receive your basic profile name and email address to keep your bookmarks and preferences saved across your sessions.</p>
+    </div>
+
+    <div class="highlight-card">
+        <h4>🔔 Notification Preferences</h4>
+        <p>If you enable push notifications, your device uses a standard notification token to receive helpful alerts about recent exam announcements, syllabus releases, and news.</p>
+    </div>
+
+    <div class="highlight-card">
+        <h4>📱 Device &amp; Performance Insights</h4>
+        <p>We receive general, non-personal information such as your device model and app version. This helps us ensure the app looks great on your screen size, loads quickly, and stays free of bugs.</p>
+    </div>
+
+    <div class="highlight-card">
+        <h4>🧮 Calculator Inputs (Kept on your phone)</h4>
+        <p>When you use the ROPA 2019 Salary Calculator or Utsashree Transfer Calculator, your entries are calculated directly on your device. We do not send your personal financial details or salary figures to any remote database.</p>
+    </div>
+
+    <h2>3. How We Use This Information</h2>
+    <p>Everything we collect is used solely to provide and improve your experience:</p>
     <ul>
-        <li>West Bengal Board of Primary Education (WBBPE): <a href="https://wbbpe.org" target="_blank" rel="noopener">wbbpe.org</a></li>
-        <li>West Bengal Board of Secondary Education (WBBSE): <a href="https://wbbse.wb.gov.in" target="_blank" rel="noopener">wbbse.wb.gov.in</a></li>
-        <li>West Bengal Council of Higher Secondary Education (WBCHSE): <a href="https://wbchse.wb.gov.in" target="_blank" rel="noopener">wbchse.wb.gov.in</a></li>
-        <li>West Bengal Central School Service Commission (WBSSC): <a href="http://www.westbengalssc.com" target="_blank" rel="noopener">westbengalssc.com</a></li>
-        <li>School Education Department / Banglar Shiksha: <a href="https://banglarmukho.gov.in" target="_blank" rel="noopener">banglarmukho.gov.in</a> / <a href="https://wbsed.gov.in" target="_blank" rel="noopener">wbsed.gov.in</a></li>
-        <li>WBIFMS / Utsashree Portal: <a href="https://wbifms.gov.in" target="_blank" rel="noopener">wbifms.gov.in</a></li>
+        <li>To keep your saved notes and bookmarked materials in sync.</li>
+        <li>To notify you about important educational updates and career news you care about.</li>
+        <li>To fix crashes, improve performance, and keep the app secure.</li>
+        <li>To show standard, non-intrusive advertisements that help keep Teacher Campus free for everyone.</li>
     </ul>
 
-    <h2>3. Information We Collect</h2>
-    <h3>A. Personal Information You Provide</h3>
-    <p>When you register or interact with the app, we may collect: name, email address, profile avatar (via Google OAuth / Appwrite authentication), bookmarked resources, and support communications.</p>
-    
-    <h3>B. Automatically Collected Technical Data</h3>
-    <p>We automatically collect device specifications (model, OS version, resolution), anonymized IP address, app session statistics, and diagnostic crash logs to maintain app performance.</p>
+    <h2>4. Third-Party Services</h2>
+    <p>Like most modern mobile apps, we partner with reliable services to support our features (such as sending push notifications, securing user logins, and displaying ads). These partners only process data to perform these specific tasks on our behalf and are bound to keep your data secure.</p>
 
-    <h3>C. Firebase Cloud Messaging (FCM) Data</h3>
-    <p>We collect and store your device's FCM push token to transmit important notifications about exam circulars, syllabus updates, and result alerts.</p>
-
-    <h3>D. Career Calculator Data (Local Only)</h3>
-    <p>Data inputted into the <strong>ROPA 2019 Salary Calculator</strong> and <strong>Utsashree Transfer Calculator</strong> is processed locally on your device and is never uploaded to remote servers.</p>
-
-    <h2>4. How We Use Your Information</h2>
+    <h2>5. You Are in Full Control of Your Data</h2>
+    <p>We believe in giving you complete control over your information:</p>
     <ul>
-        <li>To provide study resources, notes, and recruitment updates.</li>
-        <li>To authenticate accounts and sync bookmarks via Appwrite Cloud.</li>
-        <li>To dispatch timely push notifications regarding West Bengal education news.</li>
-        <li>To debug crashes, optimize performance, and prevent fraud.</li>
-        <li>To serve contextual in-app advertisements via Google AdMob.</li>
+        <li><strong>Account &amp; Data Deletion:</strong> You can delete your account and profile data anytime directly from the app's settings, or by reaching out to us. Once requested, your personal profile data is permanently removed.</li>
+        <li><strong>Notification Controls:</strong> You can turn notifications on or off anytime directly in your phone's notification settings.</li>
     </ul>
 
-    <h2>5. Third-Party Services and SDKs</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Service Provider</th>
-                <th>Purpose</th>
-                <th>Data Collected</th>
-                <th>Privacy Policy</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Appwrite Cloud</strong></td>
-                <td>Authentication &amp; User Database</td>
-                <td>Name, Email, Bookmarks</td>
-                <td><a href="https://appwrite.io/privacy" target="_blank" rel="noopener">Appwrite Policy</a></td>
-            </tr>
-            <tr>
-                <td><strong>Google Firebase (FCM)</strong></td>
-                <td>Push Notifications</td>
-                <td>FCM Token, Instance ID</td>
-                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Policy</a></td>
-            </tr>
-            <tr>
-                <td><strong>Google Mobile Ads (AdMob)</strong></td>
-                <td>Ad Monetization</td>
-                <td>Advertising ID, IP, Ad clicks</td>
-                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Ads Policy</a></td>
-            </tr>
-        </tbody>
-    </table>
+    <h2>6. Keeping Your Information Safe</h2>
+    <p>We use modern, industry-standard security measures to safeguard your information both while it travels to our servers and while stored. We regularly review our security practices to keep your data well protected.</p>
 
-    <h2>6. Account &amp; Data Deletion (Google Play Compliant)</h2>
-    <p>You have the absolute right to delete your account and associated personal data at any time:</p>
-    <ul>
-        <li><strong>In-App:</strong> Navigate to <strong>More &gt; Profile &gt; Delete Account</strong>.</li>
-        <li><strong>Web / Email Request:</strong> Email <a href="mailto:privacy@teachercampus.in">privacy@teachercampus.in</a> or <a href="mailto:support@teachercampus.in">support@teachercampus.in</a> with the subject <em>"Account Deletion Request"</em> and your registered email.</li>
-    </ul>
-    <p>All personal data is permanently expunged within 30 days of receiving your request.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>Teacher Campus is designed for adult educators, college students, and teaching aspirants (aged 18 and older). We do not knowingly collect personal details from children under 13.</p>
 
-    <h2>7. Security &amp; Data Retention</h2>
-    <p>We apply industry-standard TLS 1.3 encryption in transit and AES-256 encryption at rest. Personal data is retained only as long as your account remains active.</p>
+    <h2>8. Updates to This Policy</h2>
+    <p>As we add new helpful features to Teacher Campus, we may occasionally update this Privacy Policy. If we make meaningful changes, we will update the date at the top so you are always aware of how we protect your privacy.</p>
 
-    <h2>8. Children's Privacy</h2>
-    <p>Teacher Campus is designed for adult educators and teacher recruitment aspirants (aged 18+). We do not knowingly collect personal information from individuals under 13 years of age.</p>
-
-    <h2>9. Grievance Redressal Officer (DPDP Act &amp; IT Act Compliance)</h2>
-    <p>In accordance with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023, you may contact our Grievance Officer:</p>
-    <ul>
-        <li><strong>Grievance Officer:</strong> Grievance Redressal Cell, TND Media</li>
-        <li><strong>Email:</strong> <a href="mailto:grievance@teachercampus.in">grievance@teachercampus.in</a></li>
-        <li><strong>Support:</strong> <a href="mailto:support@teachercampus.in">support@teachercampus.in</a></li>
-        <li><strong>Postal Address:</strong> Kolkata, West Bengal, India - 700001</li>
-        <li><strong>Portal:</strong> <a href="https://teachercampus.in" target="_blank" rel="noopener">teachercampus.in</a></li>
-    </ul>
+    <h2>9. We're Here to Help</h2>
+    <p>If you ever have questions, suggestions, or need help managing your data, please reach out to us through the in-app support options or our application store page. We are always glad to assist you.</p>
 
     <div class="footer">
-        &copy; 2026 TND Media. All rights reserved. Teacher Campus &trade; is a proprietary platform of TND Media.
+        Thank you for being part of the Teacher Campus community. &bull; &copy; 2026 Teacher Campus
     </div>
 </div>
 
