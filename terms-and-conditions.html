@@ -74,7 +74,7 @@
             background-color: var(--accent-warm);
             border: 1px solid var(--accent-warm-border);
             color: var(--accent-warm-text);
-            padding: 16px 20px;
+            padding: 18px 20px;
             border-radius: 12px;
             margin: 24px 0;
             font-size: 13.5px;
@@ -83,8 +83,9 @@
 
         .friendly-box strong {
             display: block;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             color: #78350F;
+            font-size: 14px;
         }
 
         h2 {
@@ -93,9 +94,6 @@
             margin-top: 32px;
             margin-bottom: 12px;
             font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
         p {
@@ -115,6 +113,16 @@
             margin-bottom: 8px;
         }
 
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .highlight-card {
             background: #F8FAFC;
             border: 1px solid var(--border);
@@ -124,14 +132,38 @@
         }
 
         .highlight-card h4 {
-            font-size: 14px;
+            font-size: 14.5px;
             font-weight: 600;
             color: var(--heading);
             margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .highlight-card p {
             margin-bottom: 0;
+            font-size: 13.5px;
+        }
+
+        .icon-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            background: #FFFFFF;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .contact-box {
+            background: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 18px 0;
             font-size: 13.5px;
         }
 
@@ -163,44 +195,62 @@
     </div>
 
     <div class="friendly-box">
-        <strong>About Teacher Campus:</strong>
-        Teacher Campus is an independent educational app created to assist West Bengal teachers, trainees, and aspirants with study resources, circular summaries, and career tools. We are not an official government body, and we share public notices for your convenience.
+        <strong>Government Non-Affiliation &amp; Public Sources:</strong>
+        Teacher Campus is an independent educational app created to assist West Bengal teachers, trainees, and aspirants with study resources, circular summaries, and career tools. We are not an official government body, and we aggregate public domain notices for your convenience from official sources including:
+        <ul style="margin-top: 8px; margin-bottom: 4px; margin-left: 20px; font-size: 13px;">
+            <li>West Bengal Board of Primary Education (WBBPE): <a href="https://wbbpe.wb.gov.in" target="_blank" rel="noopener">wbbpe.wb.gov.in</a></li>
+            <li>West Bengal Board of Secondary Education (WBBSE): <a href="https://wbbse.wb.gov.in" target="_blank" rel="noopener">wbbse.wb.gov.in</a></li>
+            <li>West Bengal Council of Higher Secondary Education (WBCHSE): <a href="https://wbchse.wb.gov.in" target="_blank" rel="noopener">wbchse.wb.gov.in</a></li>
+            <li>West Bengal Central School Service Commission (WBSSC): <a href="http://www.westbengalssc.com" target="_blank" rel="noopener">westbengalssc.com</a></li>
+            <li>Banglar Shiksha / School Education Dept: <a href="https://banglarshiksha.gov.in" target="_blank" rel="noopener">banglarshiksha.gov.in</a></li>
+            <li>Utsashree / WBIFMS Portal: <a href="https://wbifms.gov.in" target="_blank" rel="noopener">wbifms.gov.in</a></li>
+        </ul>
     </div>
 
     <h2>1. Welcome to Teacher Campus!</h2>
     <p>We are glad to have you here. By using the Teacher Campus app, you agree to these simple and friendly guidelines, along with our Privacy Policy. Our goal is to provide a clean, helpful, and reliable environment for everyone preparing for teaching careers.</p>
 
     <h2>2. Where Our Information Comes From</h2>
-    <p>To keep you updated, we aggregate publicly available notifications, recruitment updates, exam circulars, and study materials from official portals (such as WBBPE, WBBSE, WBCHSE, WBSSC, and related educational departments).</p>
+    <p>To keep you updated, we aggregate publicly available notifications, recruitment updates, exam circulars, and study materials from official portals.</p>
     <p>While we make every effort to keep our summaries timely and accurate, official government gazettes and primary board websites are always the ultimate authority. We recommend double-checking official sources before making important career submissions or financial decisions.</p>
 
     <h2>3. A Helpful Note on Our Calculators</h2>
-    <p>Teacher Campus provides handy tools like the <strong>ROPA 2019 Salary Calculator</strong> and <strong>Utsashree Transfer Calculator</strong>:</p>
+    <p>Teacher Campus provides handy tools like the <strong>ROPA Salary Calculator</strong> and <strong>Utsashree Transfer Calculator</strong>:</p>
 
     <div class="highlight-card">
-        <h4>💡 Estimation Tools Only</h4>
+        <h4><span class="icon-badge">&#128161;</span> Estimation Tools Only</h4>
         <p>These calculators are designed to give you helpful mathematical estimates for personal planning. Because individual school allowances and deductions can vary, your school's Drawing and Disbursing Officer (DDO) or administrative office will always provide your official pay slip.</p>
     </div>
 
     <h2>4. Respecting Content &amp; Good Conduct</h2>
-    <p>We work hard to design, build, and curate helpful resources for you. To keep the app enjoyable for everyone, we kindly ask you to:</p>
+    <p>We work hard to design, build, and curate helpful resources for you. To keep the app enjoyable and secure for everyone, you agree not to:</p>
     <ul>
-        <li>Use the materials and calculators for your personal learning and career guidance.</li>
-        <li>Avoid using automated scrapers or bots to extract bulk data from the app.</li>
-        <li>Refrain from attempting to modify, disrupt, or bypass the app's security features.</li>
+        <li>Use automated scripts, bots, or scrapers to extract bulk data or bypass server rate limits.</li>
+        <li>Attempt to modify, reverse engineer, disrupt, or bypass the app's security features.</li>
+        <li>Use the platform for any unlawful purpose or to distribute inaccurate circulars intentionally.</li>
     </ul>
+    <p>We reserve the right to restrict or terminate access to our services for accounts that violate these rules or engage in activities harmful to the platform.</p>
 
     <h2>5. External Links and Ads</h2>
     <p>The app may provide helpful links to official government websites or display standard ads that keep our platform free. Since external websites are maintained by third parties, we cannot control their content or policies.</p>
 
     <h2>6. Keeping Things Fair &amp; Clear</h2>
-    <p>We do our best to ensure the app is always fast, reliable, and error-free. However, like any digital software, services are provided on an "as-is" basis. We cannot be held liable for temporary technical interruptions, outdated external circulars, or decisions made based on quick computational estimates.</p>
+    <p><strong>Third-Party Trademarks:</strong> All board names, examination titles, government emblems, and portal logos (such as WBBPE, WBSSC, WBCHSE, etc.) are the intellectual property of their respective government authorities. They are referenced strictly for nominative, educational, and identification purposes.</p>
+    <p><strong>Disclaimer &amp; Limitation of Liability:</strong> Services and calculations are provided on an "as-is" and "as-available" basis. We make reasonable efforts to maintain accuracy, but cannot be held liable for technical downtime, external server errors, outdated circulars, or financial decisions made based on computational estimates.</p>
+    <p><strong>Governing Law:</strong> These Terms shall be governed by and construed in accordance with the laws of India. Any legal actions or disputes shall be subject to the exclusive jurisdiction of the competent courts in West Bengal, India.</p>
 
     <h2>7. Changes to These Terms</h2>
-    <p>As we continue to grow and introduce new features, we may occasionally refine these terms. If we make any notable changes, we'll update the date right at the top of this page.</p>
+    <p>As we continue to grow and introduce new features, we may occasionally refine these terms. If we make any notable changes, we will update the date right at the top of this page.</p>
 
     <h2>8. Getting in Touch</h2>
-    <p>If you have any feedback, ideas, or questions about these terms or your experience in the app, feel free to reach out through the in-app support section or our official store page. We love hearing from our community!</p>
+    <p>If you have any feedback, ideas, or questions about these terms or your experience in the app, please contact us:</p>
+
+    <div class="contact-box">
+        <strong>Teacher Campus Helpdesk</strong><br>
+        Email: <a href="mailto:support@teachercampus.in">support@teachercampus.in</a><br>
+        Website: <a href="https://teachercampus.in" target="_blank" rel="noopener">https://teachercampus.in</a><br>
+        Location: West Bengal, India
+    </div>
 
     <div class="footer">
         Wishing you the best in your educational journey. &bull; &copy; 2026 Teacher Campus
