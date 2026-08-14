@@ -170,14 +170,17 @@
             }
         }
 
-        window.addEventListener('DOMContentLoaded', () => {
+        function syncFromHash() {
             const hash = window.location.hash.replace('#', '').toLowerCase();
             if (hash === 'terms') {
                 loadDoc('terms');
             } else {
                 loadDoc('privacy');
             }
-        });
+        }
+
+        window.addEventListener('DOMContentLoaded', syncFromHash);
+        window.addEventListener('hashchange', syncFromHash);
     </script>
 </body>
 </html>
