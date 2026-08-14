@@ -3,87 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions - Teacher Campus</title>
-    <meta name="description" content="Terms and Conditions of Service for Teacher Campus Android Application and Platform by TND Media.">
+    <title>Terms of Use - Teacher Campus</title>
+    <meta name="description" content="Terms of Use for Teacher Campus. Clear, simple, and friendly guidelines for our community.">
     <style>
         :root {
-            --primary: #1E60FB;
-            --primary-dark: #1244B8;
-            --text-dark: #0F172A;
-            --text-muted: #475569;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --text-main: #2D3748;
+            --text-muted: #4A5568;
+            --heading: #1A202C;
             --bg-page: #F8FAFC;
             --bg-card: #FFFFFF;
             --border: #E2E8F0;
-            --accent-warn: #FEF3C7;
-            --accent-warn-text: #92400E;
-            --accent-warn-border: #FCD34D;
+            --primary: #1E60FB;
+            --primary-soft: #EFF6FF;
+            --accent-warm: #FFFBEB;
+            --accent-warm-border: #FDE68A;
+            --accent-warm-text: #92400E;
         }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-family: var(--font-sans);
             background-color: var(--bg-page);
-            color: var(--text-dark);
-            line-height: 1.65;
-            padding: 24px 16px;
+            color: var(--text-main);
+            line-height: 1.75;
+            padding: 40px 16px;
         }
+
         .container {
-            max-width: 860px;
+            max-width: 820px;
             margin: 0 auto;
             background: var(--bg-card);
-            padding: 40px 32px;
+            padding: 44px;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
             border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
         }
+
         .header {
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 24px;
             margin-bottom: 28px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
         }
-        .app-badge {
+
+        .badge {
             display: inline-block;
-            background: #EFF6FF;
+            background: var(--primary-soft);
             color: var(--primary);
-            font-weight: 700;
+            font-weight: 600;
             font-size: 12px;
             padding: 4px 12px;
             border-radius: 999px;
             margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
-        h1 { font-size: 28px; color: var(--text-dark); font-weight: 800; margin-bottom: 8px; }
-        .meta-info { font-size: 13.5px; color: var(--text-muted); }
-        h2 {
-            font-size: 20px;
-            color: var(--text-dark);
-            margin-top: 32px;
-            margin-bottom: 14px;
+
+        h1 {
+            font-size: 26px;
+            color: var(--heading);
             font-weight: 700;
+            margin-bottom: 6px;
         }
-        h3 { font-size: 16px; color: var(--text-dark); margin-top: 18px; margin-bottom: 8px; font-weight: 600; }
-        p { margin-bottom: 14px; font-size: 14.5px; color: var(--text-muted); }
-        ul { margin-left: 20px; margin-bottom: 14px; color: var(--text-muted); font-size: 14.5px; }
-        li { margin-bottom: 6px; }
-        a { color: var(--primary); text-decoration: none; font-weight: 500; }
-        a:hover { text-decoration: underline; }
-        .alert-box {
-            background-color: var(--accent-warn);
-            border: 1px solid var(--accent-warn-border);
-            color: var(--accent-warn-text);
+
+        .meta {
+            font-size: 13px;
+            color: #718096;
+        }
+
+        .friendly-box {
+            background-color: var(--accent-warm);
+            border: 1px solid var(--accent-warm-border);
+            color: var(--accent-warm-text);
             padding: 16px 20px;
             border-radius: 12px;
-            margin: 20px 0;
-            font-size: 14px;
+            margin: 24px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
         }
-        .alert-box strong { display: block; margin-bottom: 6px; font-size: 15px; }
+
+        .friendly-box strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #78350F;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: var(--heading);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin-left: 22px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-card {
+            background: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin: 16px 0;
+        }
+
+        .highlight-card h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--heading);
+            margin-bottom: 6px;
+        }
+
+        .highlight-card p {
+            margin-bottom: 0;
+            font-size: 13.5px;
+        }
+
         .footer {
             margin-top: 40px;
-            padding-top: 24px;
+            padding-top: 20px;
             border-top: 1px solid var(--border);
             font-size: 13px;
-            color: var(--text-muted);
+            color: #A0AEC0;
             text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 24px 18px; }
+            body { padding: 16px 8px; }
+            h1 { font-size: 22px; }
         }
     </style>
 </head>
@@ -91,71 +155,55 @@
 
 <div class="container">
     <div class="header">
-        <span class="app-badge">Legal Agreement</span>
-        <h1>Terms and Conditions of Service</h1>
-        <div class="meta-info">
-            <strong>Package Name:</strong> com.tndmedia.bengalteachers &bull; 
-            <strong>Effective Date:</strong> August 14, 2026 &bull; 
-            <strong>Last Updated:</strong> August 14, 2026 &bull; 
-            <strong>Publisher:</strong> TND Media
+        <span class="badge">Community &amp; Guidelines</span>
+        <h1>Terms of Use</h1>
+        <div class="meta">
+            Application: Teacher Campus &bull; Last updated: August 2026
         </div>
     </div>
 
-    <div class="alert-box">
-        <strong>⚠️ MANDATORY NON-GOVERNMENT ENTITY DISCLAIMER:</strong>
-        Teacher Campus is an independently developed educational guidance platform operated by TND Media. Teacher Campus is <strong>NOT</strong> an official app, agent, or representative of the Government of India, Government of West Bengal, WBBPE, WBBSE, WBCHSE, WBSSC, or any District Primary School Council.
+    <div class="friendly-box">
+        <strong>About Teacher Campus:</strong>
+        Teacher Campus is an independent educational app created to assist West Bengal teachers, trainees, and aspirants with study resources, circular summaries, and career tools. We are not an official government body, and we share public notices for your convenience.
     </div>
 
-    <h2>1. Agreement to Terms</h2>
-    <p>By downloading, installing, registering, or using <strong>Teacher Campus</strong> (the "App"), you agree to be bound by these Terms and Conditions ("Terms") and our <a href="privacy-policy.html">Privacy Policy</a>. If you do not agree to these Terms, you must immediately uninstall and discontinue use of the App.</p>
+    <h2>1. Welcome to Teacher Campus!</h2>
+    <p>We are glad to have you here. By using the Teacher Campus app, you agree to these simple and friendly guidelines, along with our Privacy Policy. Our goal is to provide a clean, helpful, and reliable environment for everyone preparing for teaching careers.</p>
 
-    <h2>2. Source of Public Information</h2>
-    <p>Educational circulars, syllabus updates, exam guidelines, and council directories presented in Teacher Campus are aggregated from public domain government announcements for educational and career assistance. Primary sources include:</p>
+    <h2>2. Where Our Information Comes From</h2>
+    <p>To keep you updated, we aggregate publicly available notifications, recruitment updates, exam circulars, and study materials from official portals (such as WBBPE, WBBSE, WBCHSE, WBSSC, and related educational departments).</p>
+    <p>While we make every effort to keep our summaries timely and accurate, official government gazettes and primary board websites are always the ultimate authority. We recommend double-checking official sources before making important career submissions or financial decisions.</p>
+
+    <h2>3. A Helpful Note on Our Calculators</h2>
+    <p>Teacher Campus provides handy tools like the <strong>ROPA 2019 Salary Calculator</strong> and <strong>Utsashree Transfer Calculator</strong>:</p>
+
+    <div class="highlight-card">
+        <h4>💡 Estimation Tools Only</h4>
+        <p>These calculators are designed to give you helpful mathematical estimates for personal planning. Because individual school allowances and deductions can vary, your school's Drawing and Disbursing Officer (DDO) or administrative office will always provide your official pay slip.</p>
+    </div>
+
+    <h2>4. Respecting Content &amp; Good Conduct</h2>
+    <p>We work hard to design, build, and curate helpful resources for you. To keep the app enjoyable for everyone, we kindly ask you to:</p>
     <ul>
-        <li>West Bengal Board of Primary Education (WBBPE): <a href="https://wbbpe.org" target="_blank" rel="noopener">wbbpe.org</a></li>
-        <li>West Bengal Board of Secondary Education (WBBSE): <a href="https://wbbse.wb.gov.in" target="_blank" rel="noopener">wbbse.wb.gov.in</a></li>
-        <li>West Bengal Council of Higher Secondary Education (WBCHSE): <a href="https://wbchse.wb.gov.in" target="_blank" rel="noopener">wbchse.wb.gov.in</a></li>
-        <li>West Bengal Central School Service Commission (WBSSC): <a href="http://www.westbengalssc.com" target="_blank" rel="noopener">westbengalssc.com</a></li>
-        <li>Banglar Shiksha / School Education Dept: <a href="https://banglarmukho.gov.in" target="_blank" rel="noopener">banglarmukho.gov.in</a></li>
-        <li>Utsashree / WBIFMS Portal: <a href="https://wbifms.gov.in" target="_blank" rel="noopener">wbifms.gov.in</a></li>
+        <li>Use the materials and calculators for your personal learning and career guidance.</li>
+        <li>Avoid using automated scrapers or bots to extract bulk data from the app.</li>
+        <li>Refrain from attempting to modify, disrupt, or bypass the app's security features.</li>
     </ul>
 
-    <h2>3. Career Tools &amp; Calculator Disclaimers</h2>
-    <h3>A. ROPA 2019 Salary Calculator</h3>
-    <p>The ROPA 2019 salary calculator provides mathematical approximations for informational budgeting based on public pay commission schedules. Calculator outputs do <strong>NOT</strong> constitute official pay slips, government wage sanction orders, or legal entitlement guarantees.</p>
-    
-    <h3>B. Utsashree Transfer Calculator &amp; Leave Rules</h3>
-    <p>Transfer points and leave entitlement summaries are based on historical government orders. Final leave sanction and transfer approvals remain exclusively with statutory education boards and appointing authorities.</p>
+    <h2>5. External Links and Ads</h2>
+    <p>The app may provide helpful links to official government websites or display standard ads that keep our platform free. Since external websites are maintained by third parties, we cannot control their content or policies.</p>
 
-    <h2>4. DPSC &amp; DI Directory Contacts</h2>
-    <p>Helpline numbers and addresses for District Primary School Councils (DPSCs) and District Inspector of Schools are compiled from public records. TND Media is not liable for telecom carrier charges, unverified line changes, or unanswered calls.</p>
+    <h2>6. Keeping Things Fair &amp; Clear</h2>
+    <p>We do our best to ensure the app is always fast, reliable, and error-free. However, like any digital software, services are provided on an "as-is" basis. We cannot be held liable for temporary technical interruptions, outdated external circulars, or decisions made based on quick computational estimates.</p>
 
-    <h2>5. User Accounts &amp; Security</h2>
-    <p>Users are responsible for safeguarding login credentials authenticated via Appwrite and OAuth providers. You must notify us immediately at <a href="mailto:support@teachercampus.in">support@teachercampus.in</a> if you detect unauthorized account activity.</p>
+    <h2>7. Changes to These Terms</h2>
+    <p>As we continue to grow and introduce new features, we may occasionally refine these terms. If we make any notable changes, we'll update the date right at the top of this page.</p>
 
-    <h2>6. Intellectual Property Rights</h2>
-    <p>All software code, user interface designs, custom graphics, and curated study notes in Teacher Campus are the proprietary property of <strong>TND Media</strong>. Users may not decompile, reverse-engineer, crawl, scrape, or distribute our proprietary materials without prior written consent.</p>
-
-    <h2>7. Prohibited Conduct</h2>
-    <p>Users agree not to misuse the App, inject malicious code, attempt unauthorized backend access, impersonate government officials, or engage in unlawful or disruptive behavior.</p>
-
-    <h2>8. Disclaimer of Warranties &amp; Limitation of Liability</h2>
-    <p>The App is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind. In no event shall TND Media be liable for any indirect, incidental, or consequential damages resulting from reliance on in-app notifications, calculations, or third-party links.</p>
-
-    <h2>9. Governing Law &amp; Jurisdiction</h2>
-    <p>These Terms shall be governed by the laws of India. Any disputes arising from the use of Teacher Campus shall be subject to the exclusive jurisdiction of the competent courts in <strong>Kolkata, West Bengal, India</strong>.</p>
-
-    <h2>10. Contact &amp; Legal Notices</h2>
-    <p>For legal inquiries, contact:</p>
-    <ul>
-        <li><strong>Publisher:</strong> TND Media Legal Division</li>
-        <li><strong>Legal &amp; Support Email:</strong> <a href="mailto:support@teachercampus.in">support@teachercampus.in</a> / <a href="mailto:legal@teachercampus.in">legal@teachercampus.in</a></li>
-        <li><strong>Address:</strong> Kolkata, West Bengal, India - 700001</li>
-        <li><strong>Portal:</strong> <a href="https://teachercampus.in" target="_blank" rel="noopener">teachercampus.in</a></li>
-    </ul>
+    <h2>8. Getting in Touch</h2>
+    <p>If you have any feedback, ideas, or questions about these terms or your experience in the app, feel free to reach out through the in-app support section or our official store page. We love hearing from our community!</p>
 
     <div class="footer">
-        &copy; 2026 TND Media. All rights reserved. Teacher Campus &trade; is a proprietary product of TND Media.
+        Wishing you the best in your educational journey. &bull; &copy; 2026 Teacher Campus
     </div>
 </div>
 
